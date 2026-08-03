@@ -65,7 +65,7 @@ function Index() {
     <ShopProvider>
       <Navbar />
       <main>
-        <h1 className="sr-only">Sweet N Soft — freshly baked cakes, pastries and desserts</h1>
+        
         <Hero />
         <Features />
         <About />
