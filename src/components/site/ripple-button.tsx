@@ -10,7 +10,21 @@ export const RippleButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, children, onClick, ...props }, ref) => {
     const [ripples, setRipples] = React.useState<Ripple[]>([]);
 
+    if (props.asChild) {
+      return (
+        <Button
+          ref={ref}
+          className={cn("relative overflow-hidden", className)}
+          onClick={onClick}
+          {...props}
+        >
+          {children}
+        </Button>
+      );
+    }
+
     return (
+
       <Button
         ref={ref}
         className={cn("relative overflow-hidden", className)}
