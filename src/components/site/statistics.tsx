@@ -61,7 +61,7 @@ export function Statistics() {
           {stats.map((s) => (
             <div key={s.label} className="text-center">
               <p className="font-display text-4xl font-semibold text-gradient sm:text-5xl">
-                <Counter value={s.value} suffix={s.suffix} decimals={s.decimals} run={inView} />
+                <Counter value={s.value} suffix={s.suffix} decimals={s.decimals ?? 0} run={inView} />
               </p>
               <p className="mt-2 text-sm text-muted-foreground">{s.label}</p>
             </div>
