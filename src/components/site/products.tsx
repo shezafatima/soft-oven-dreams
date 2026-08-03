@@ -65,7 +65,7 @@ export function Products() {
                 min={8}
                 max={40}
                 step={1}
-                onValueChange={([v]) => setMaxPrice(v)}
+                onValueChange={([v]) => setMaxPrice(v ?? 40)}
                 aria-label="Maximum price"
               />
             </div>
