@@ -1,16 +1,12 @@
-import { motion } from "motion/react";
+"use client";
+import * as motion from "motion/react-client";
+import Image from "next/image"; 
+import { RippleButton } from "./ripple-button";
 import { ArrowRight, Star, UtensilsCrossed } from "lucide-react";
-
-import { RippleButton } from "@/components/site/ripple-button";
-import heroCake from "@/assets/hero-cake.jpg";
-import cupcakes from "@/assets/p-cupcakes.jpg";
-import donuts from "@/assets/p-donuts.jpg";
-import cookies from "@/assets/p-cookies.jpg";
-
 const floaters = [
-  { src: cupcakes, alt: "Strawberry cupcake", className: "-top-6 -left-6 h-24 w-24 sm:h-28 sm:w-28", delay: "0s" },
-  { src: donuts, alt: "Chocolate donut", className: "top-1/3 -right-8 h-24 w-24 sm:h-32 sm:w-32", delay: "1.4s" },
-  { src: cookies, alt: "Chocolate chip cookies", className: "-bottom-8 left-6 h-24 w-24 sm:h-28 sm:w-28", delay: "2.6s" },
+  { src: '/images/p-cupcakes.jpg', alt: "Strawberry cupcake", className: "-top-6 -left-6 h-24 w-24 sm:h-28 sm:w-28", delay: "0s" },
+  { src: '/images/p-donuts.jpg', alt: "Chocolate donut", className: "top-1/3 -right-8 h-24 w-24 sm:h-32 sm:w-32", delay: "1.4s" },
+  { src: '/images/p-cookies.jpg', alt: "Chocolate chip cookies", className: "-bottom-8 left-6 h-24 w-24 sm:h-28 sm:w-28", delay: "2.6s" },
 ];
 
 export function Hero() {
@@ -100,8 +96,8 @@ export function Hero() {
           className="relative mx-auto w-full max-w-lg"
         >
           <div className="relative overflow-hidden rounded-[2.5rem] shadow-lift">
-            <img
-              src={heroCake}
+            <Image
+              src='../images/hero-cake.jpg'
               alt="Layered strawberry cake on a marble cake stand"
               width={1024}
               height={1024}

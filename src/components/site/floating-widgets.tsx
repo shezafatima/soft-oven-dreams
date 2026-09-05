@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 import { ArrowUp, ShoppingBag } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";

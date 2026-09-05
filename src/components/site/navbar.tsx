@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 import { Menu, Moon, Search, ShoppingBag, Sun, X, Heart, Trash2 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";

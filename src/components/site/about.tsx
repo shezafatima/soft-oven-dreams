@@ -3,7 +3,8 @@ import { Check } from "lucide-react";
 import { Reveal } from "@/components/site/reveal";
 import { RippleButton } from "@/components/site/ripple-button";
 import croissants from "@/assets/p-croissants.jpg";
-import macarons from "@/assets/p-macarons.jpg";
+
+import Image from "next/image";
 
 const points = [
   "Handcrafted in small batches, every single morning",
@@ -17,8 +18,8 @@ export function About() {
       <div className="mx-auto grid max-w-7xl items-center gap-14 px-4 lg:grid-cols-2">
         <Reveal className="relative">
           <div className="relative overflow-hidden rounded-[2.5rem] shadow-lift">
-            <img
-              src={croissants}
+            <Image
+              src='/images/p-croissants.jpg'
               alt="Freshly baked butter croissants resting on linen"
               loading="lazy"
               width={768}
@@ -26,8 +27,8 @@ export function About() {
               className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
             />
           </div>
-          <img
-            src={macarons}
+          <Image
+            src='/images/p-macarons.jpg'
             alt="Stacked pastel macarons"
             loading="lazy"
             width={768}

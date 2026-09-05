@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { toast } from "sonner";

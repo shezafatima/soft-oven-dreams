@@ -1,13 +1,15 @@
+
+"use client";
 import { useState } from "react";
 import { Expand } from "lucide-react";
 
 import { Reveal, SectionHeading } from "@/components/site/reveal";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { products } from "@/components/site/shop-store";
-import heroCake from "@/assets/hero-cake.jpg";
+import Image from "next/image";
 
 const gallery = [
-  { src: heroCake, alt: "Strawberry layer cake on a marble stand", span: "row-span-2" },
+  { src: '/images/hero-cake.jpg', alt: "Strawberry layer cake on a marble stand", span: "row-span-2" },
   ...products.map((p, i) => ({
     src: p.image,
     alt: p.name,
@@ -34,7 +36,7 @@ export function Gallery() {
                 className="group relative block w-full overflow-hidden rounded-3xl shadow-soft"
                 aria-label={`View ${g.alt} larger`}
               >
-                <img
+                <Image
                   src={g.src}
                   alt={g.alt}
                   loading="lazy"

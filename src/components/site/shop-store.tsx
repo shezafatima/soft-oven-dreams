@@ -1,14 +1,9 @@
+"use client";
+
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { toast } from "sonner";
 
-import chocolateCake from "@/assets/p-chocolate-cake.jpg";
-import redVelvet from "@/assets/p-red-velvet.jpg";
-import cheesecake from "@/assets/p-cheesecake.jpg";
-import cupcakes from "@/assets/p-cupcakes.jpg";
-import donuts from "@/assets/p-donuts.jpg";
-import croissants from "@/assets/p-croissants.jpg";
-import macarons from "@/assets/p-macarons.jpg";
-import cookies from "@/assets/p-cookies.jpg";
+
 
 export type Product = {
   id: string;
@@ -28,7 +23,7 @@ export const products: Product[] = [
     price: 32,
     rating: 4.9,
     category: "Cakes",
-    image: chocolateCake,
+    image: '/images/p-chocolate-cake.jpg',
   },
   {
     id: "red-velvet",
@@ -37,7 +32,7 @@ export const products: Product[] = [
     price: 34,
     rating: 4.8,
     category: "Cakes",
-    image: redVelvet,
+    image: '/images/p-red-velvet.jpg',
   },
   {
     id: "cheesecake",
@@ -46,7 +41,7 @@ export const products: Product[] = [
     price: 28,
     rating: 4.9,
     category: "Desserts",
-    image: cheesecake,
+    image: '/images/p-cheesecake.jpg',
   },
   {
     id: "cupcakes",
@@ -55,7 +50,7 @@ export const products: Product[] = [
     price: 14,
     rating: 4.7,
     category: "Cupcakes",
-    image: cupcakes,
+    image: '/images/p-cupcakes.jpg',
   },
   {
     id: "donuts",
@@ -64,7 +59,7 @@ export const products: Product[] = [
     price: 12,
     rating: 4.6,
     category: "Donuts",
-    image: donuts,
+    image: '/images/p-donuts.jpg',
   },
   {
     id: "croissants",
@@ -73,7 +68,7 @@ export const products: Product[] = [
     price: 9,
     rating: 4.8,
     category: "Pastries",
-    image: croissants,
+    image: '/images/p-croissants.jpg',
   },
   {
     id: "macarons",
@@ -82,7 +77,7 @@ export const products: Product[] = [
     price: 22,
     rating: 5,
     category: "Desserts",
-    image: macarons,
+    image: '/images/p-macarons.jpg',
   },
   {
     id: "cookies",
@@ -91,7 +86,7 @@ export const products: Product[] = [
     price: 10,
     rating: 4.7,
     category: "Cookies",
-    image: cookies,
+    image: '/images/p-cookies.jpg',
   },
 ];
 

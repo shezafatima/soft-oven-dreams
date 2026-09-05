@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 import { toast } from "sonner";
