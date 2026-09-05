@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   }, 
-  distDir: 'build', // Changes the build output directory to `build`
+  
 }
  
 export default nextConfig

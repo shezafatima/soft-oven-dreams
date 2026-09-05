@@ -325,7 +325,7 @@ self.__SERVER_FILES_MANIFEST={
     "turbopack": {
       "root": "E:\\portfolio-websites\\soft-oven-dreams"
     },
-    "distDirRoot": "build"
+    "distDirRoot": ".next"
   },
   "appDir": "E:\\portfolio-websites\\soft-oven-dreams",
   "relativeAppDir": "",
