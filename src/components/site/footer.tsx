@@ -5,6 +5,7 @@ import { toast } from "sonner";
 
 import { Input } from "@/components/ui/input";
 import { RippleButton } from "@/components/site/ripple-button";
+import Link from "next/link";
 
 const quickLinks = ["Home", "About", "Menu", "Special Cakes", "Gallery", "Contact"];
 const productLinks = ["Cakes", "Cupcakes", "Pastries", "Cookies", "Donuts", "Macarons"];
@@ -117,7 +118,11 @@ export function Footer() {
       </div>
 
       <div className="border-t py-6 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Sweet N Soft. All rights reserved. Freshly Baked With Love ❤️
+        © {new Date().getFullYear()} Sweet N Soft. All rights reserved.   Crafted Excellence with <span aria-hidden="true">❤️</span> by{" "}
+       
+              <Link href="https://sheza-fatima.vercel.app/" className="text-primary hover:text-accent">
+          <span className="text-primary">Sheza Fatima</span>    
+              </Link>{" "}
       </div>
     </footer>
   );
